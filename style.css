@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 30px;
+}
+.card{
+    background-color: hsl(244, 38%,16%);
+    width: 300px;
+    height: 90%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    margin-inline: auto;
+}
+.bg-image{
+    background-image: url('./image-header-mobile.jpg');
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.purple{
+    mix-blend-mode: multiply;
+    background-color: hsl(277, 64%, 61%);
+    height:200px;
+    overflow: hidden;
+    opacity: 0.9;
+}
+.description{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-inline: 20px;
+}
+.info{
+    flex-basis: 90%;
+}
+.overviews{
+    flex-basis: 10%;
+    width: 80%;
+    justify-content: center;
+}
+.info span{
+    color: hsl(277, 64%, 61%);
+}
+h1{
+    color: white;
+    font-size: 26px;
+    margin-top:15px;
+    margin-bottom: 15px;
+
+}
+.para{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.footer span{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    
+}
+.footer {
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (min-width: 680px){ 
+    html,body{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        max-height: 380px;
+        margin-inline: 30px;
+
+    }
+    .bg-image{
+        flex-basis: 50%;
+        background-image: url('./image-header-desktop.jpg');
+        background-size:cover;
+        background-position: center;
+        height: 100%;
+        margin: 0;
+        
+    }
+    .description{
+        flex-basis: 50%;
+        margin-inline: auto;
+        gap: 30px;
+         
+    }
+    h1{
+        font-size: 32px;
+    }
+    .description p{
+        
+        line-height: 20px;
+        font-family: 'Inter', sans-serif;
+        width: 80%;
+        font-size: 12px;
+    }
+    .footer p{
+        font-size: 9px;
+    }
+    .purple{
+         height:100%;
+   
+    }
+    .info{
+        font-family: 'Inter', sans-serif;
+        text-align: left;
+        width:80%;
+    }
+    .overviews{
+        display: flex;
+        text-align: left;
+    }
+    
+
+    .footer{
+       flex-basis: 100%;
+       margin-bottom: 15px;
+        
+    }
+    .footer span{
+        font-size: 22px;
+    }
+
+} 
